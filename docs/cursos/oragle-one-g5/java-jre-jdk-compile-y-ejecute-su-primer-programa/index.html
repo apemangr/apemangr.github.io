@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="¿Qué es Java?#About Java es un lenguaje de programación que corre en la JVM (Java Virtual Machine). Esto trae como ventaja que se pueda escribir un sólo código para que sea ejecutado en varios sistemas operativos sin la necesidad de realizar una modificación. Además cuenta con un Garbage Collector que permite que se optimice la utilización de la memoria.
+\[\text{Código fuente} \to \text{Bytecode} \to \text{Código compilado}\]Para transformar el código fuente en Bytecode se utiliza el comando javac.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Java JRE y JDK: Compile y ejecute su primer programa" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://apemangr.github.io/docs/cursos/oragle-one-g5/java-jre-jdk-compile-y-ejecute-su-primer-programa/" />
+<title>Java JRE y JDK: Compile y ejecute su primer programa | Second Brain 🧠</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.ae8752550e0257e2612ec69c1821393befc2a23e05b25d98a556f16ecc65d214.css" integrity="sha256-rodSVQ4CV&#43;JhLsacGCE5O&#43;/Coj4Fsl2YpVbxbsxl0hQ=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.8b880051cf21f3cfb9c7d6fa95079c898e51c372cadbeb08ea790292d74cb52e.js" integrity="sha256-i4gAUc8h88&#43;5x9b6lQeciY5Rw3LK2&#43;sI6nkCktdMtS4=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="https://apemangr.github.io/docs/cursos/oragle-one-g5/java-jre-jdk-compile-y-ejecute-su-primer-programa/index.xml" title="Second Brain 🧠" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Second Brain 🧠</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Cursos</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-57e0d77f726295b8f14ab2e775f82e41" class="toggle" checked />
+    <label for="section-57e0d77f726295b8f14ab2e775f82e41" class="flex justify-between">
+      <a role="button" class="">Oragle One G5</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cursos/oragle-one-g5/java-jre-jdk-compile-y-ejecute-su-primer-programa/" class="active">Java JRE y JDK: Compile y ejecute su primer programa</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Notas diarias
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Java JRE y JDK: Compile y ejecute su primer programa</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-es-java">¿Qué es Java?</a></li>
+    <li><a href="#el-primer-programa">El primer programa</a></li>
+    <li><a href="#programando-con-eclipse">Programando con Eclipse</a></li>
+    <li><a href="#tipos-y-variables">Tipos y variables</a>
+      <ul>
+        <li><a href="#convertir-datos">Convertir datos</a></li>
+        <li><a href="#especificar-el-valor-de-cada-tipo">Especificar el valor de cada tipo</a></li>
+      </ul>
+    </li>
+    <li><a href="#trabajando-con-cacactéres">Trabajando con cacactéres</a>
+      <ul>
+        <li><a href="#como-java-trabaja-con-la-asignación-de-variables">Como Java trabaja con la asignación de variables</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="qué-es-java">
+  ¿Qué es Java?
+  <a class="anchor" href="#qu%c3%a9-es-java">#</a>
+</h1>
+<p><a href="https://apemangr.github.io/docs/example/Colaappse/3rd-level/4th-level/" title="About Us">About</a>
+Java es un lenguaje de programación que corre en la JVM (Java Virtual Machine).
+Esto trae como ventaja que se pueda escribir un sólo código para que sea
+ejecutado en varios sistemas operativos sin la necesidad de realizar una
+modificación. Además cuenta con un <strong>Garbage Collector</strong> que permite que se
+optimice la utilización de la memoria.</p>
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \[
+\text{Código fuente} \to \text{Bytecode} \to \text{Código compilado}\]
+</span>
+
+<p>Para transformar el código fuente en <strong>Bytecode</strong> se utiliza el comando <strong>javac</strong>.</p>
+<p>Que tiene el significado de Java Compiler, luego para ejecutar el <strong>Bytecode</strong>
+en la máquina virtual se utiliza el comando <strong>java</strong> seguido del nombre del
+<strong>Bytecode</strong> generado.</p>
+<p>Un truco para poder leer el <strong>Bytecode</strong> es utilizar el comando <strong>javap</strong> que
+transformará los caracteres &ldquo;ilegibles&rdquo; en algo mas claro. Otra opción es
+utilizar Vim con el comando <strong>:%!xxd</strong> que transformará es <strong>Bytecode</strong> en
+hexadecimal.</p>
+<h1 id="el-primer-programa">
+  El primer programa
+  <a class="anchor" href="#el-primer-programa">#</a>
+</h1>
+<p>Para poder desarrollar en Java es necesario contar con el JDK (Java Development
+Kit) que cuenta con otros conjuntos dentro de el como se muestra en la figura
+de arriba.</p>
+<p>Actualmente, la versión más utilizada es la 8, puesto que es la que mas
+funcionalidades nuevas implemento y también es la más estable.</p>
+<p><strong>JRE (Java Runtime Environment):</strong>  Es lo mínimo que se necesita para que el
+usuario pueda ejecutar los programas hechos en Java.</p>
+<p><strong>JDK:</strong> Con el kit de desarrollo ya es posible generar nuevas aplicaciones
+puesto que este provee de ciertas herramientas extras para hacer esto posible.</p>
+<p>Un &ldquo;Hola mundo&rdquo; en Java se puede ejecutar de la siguiente manera:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Programa</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hola mundo&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h1 id="programando-con-eclipse">
+  Programando con Eclipse
+  <a class="anchor" href="#programando-con-eclipse">#</a>
+</h1>
+<p>Para comenzar a programar en Java con Eclipse hay que crear un nuevo proyecto
+en el que se especifican cosas como la versión del JRE, la ruta de la carpeta
+raíz, etc.</p>
+<p>También se puede trabajar sin la necesidad de un IDE, solo hay que hacer todo
+de manera &ldquo;manual&rdquo;, para ello hay que saber como funciona la compilación y
+ejecución del código escrito en Java.</p>
+<h1 id="tipos-y-variables">
+  Tipos y variables
+  <a class="anchor" href="#tipos-y-variables">#</a>
+</h1>
+<p>Java al igual que otros lenguajes cuenta con los tipos de datos básicos, dentro
+de los cuales podemos encontrar los: <strong>int, double, short, byte float, etc.</strong></p>
+<p>Cuando se realizan numéricas entre distintos tipos de datos, por ejemplo una
+división entre un <strong>int</strong> y un <strong>double</strong> se mantiene el que tenga mayor
+precisión, en este caso un <strong>double</strong>.</p>
+<h2 id="convertir-datos">
+  Convertir datos
+  <a class="anchor" href="#convertir-datos">#</a>
+</h2>
+<p>Al igual que en lenguajes como C, se pueden castear tipos de datos, por ejemplo
+si tengo una variable de tipo double y quiero eliminar sus decimales puedo
+castearla como tipo int, para esto se tiene que anteponer el tipo de dato a
+castear entre paréntesis, en este caso <strong>(int)</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">double</span> numeroA <span style="color:#f92672">=</span> <span style="color:#ae81ff">12.3456</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span>    numeroB <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span> numeroA<span style="color:#f92672">;</span>
+</span></span></code></pre></div><h2 id="especificar-el-valor-de-cada-tipo">
+  Especificar el valor de cada tipo
+  <a class="anchor" href="#especificar-el-valor-de-cada-tipo">#</a>
+</h2>
+<p>Dependiendo del tipo de dato con el que estemos trabajando tendremos que
+especificarlo en el resultado que se le este asignando a este, por ejemplo, con
+los tipos <strong>float</strong> al resultado hay que agregarle una &ldquo;f&rdquo; al final del número,
+lo mismo pasa con el tipo de dato <strong>long</strong> que se le agrega una &ldquo;l&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.2345f</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">long</span>  b <span style="color:#f92672">=</span> <span style="color:#ae81ff">123456789l</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div><h1 id="trabajando-con-cacactéres">
+  Trabajando con cacactéres
+  <a class="anchor" href="#trabajando-con-cacact%c3%a9res">#</a>
+</h1>
+<p>Para asignar un valor a una variable tipo <strong>char</strong> se utilizan las comillas simples &lsquo;&rsquo;.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">char</span> caracter <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div><h2 id="como-java-trabaja-con-la-asignación-de-variables">
+  Como Java trabaja con la asignación de variables
+  <a class="anchor" href="#como-java-trabaja-con-la-asignaci%c3%b3n-de-variables">#</a>
+</h2>
+<p>Cuando le asignamos a una variable X el valor de otra Y lo que estamos haciendo
+es copiar el valor que tenia la variable en ese momento, no las estamos
+vinculando para siempre. Si después se cambia el valor de la variable Y que fue
+copiada el valor de la variable X no tendría porque cambiar, no se trabaja con
+punteros en la asignación de valores.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-es-java">¿Qué es Java?</a></li>
+    <li><a href="#el-primer-programa">El primer programa</a></li>
+    <li><a href="#programando-con-eclipse">Programando con Eclipse</a></li>
+    <li><a href="#tipos-y-variables">Tipos y variables</a>
+      <ul>
+        <li><a href="#convertir-datos">Convertir datos</a></li>
+        <li><a href="#especificar-el-valor-de-cada-tipo">Especificar el valor de cada tipo</a></li>
+      </ul>
+    </li>
+    <li><a href="#trabajando-con-cacactéres">Trabajando con cacactéres</a>
+      <ul>
+        <li><a href="#como-java-trabaja-con-la-asignación-de-variables">Como Java trabaja con la asignación de variables</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on Obsidian Second Brain</title>
+    <title>Home on Second Brain 🧠</title>
     <link>https://apemangr.github.io/</link>
-    <description>Recent content in Introduction on Obsidian Second Brain</description>
+    <description>Recent content in Home on Second Brain 🧠</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://apemangr.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jul 2023 04:42:10 -0400</lastBuildDate><atom:link href="https://apemangr.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>With ToC</title>
       <link>https://apemangr.github.io/docs/example/table-of-contents/with-toc/</link>
@@ -28,75 +28,20 @@ Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt d
     </item>
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>https://apemangr.github.io/posts/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>30 07 2023</title>
+      <link>https://apemangr.github.io/posts/30-07-2023/</link>
+      <pubDate>Sun, 30 Jul 2023 04:42:10 -0400</pubDate>
       
-      <guid>https://apemangr.github.io/posts/creating-a-new-theme/</guid>
-      <description>Introduction#This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://apemangr.github.io/posts/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://apemangr.github.io/posts/migrate-from-jekyll/</guid>
-      <description>Move static content to static#Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/▾ images/logo.pngshould become
-▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.pngAdditionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://apemangr.github.io/posts/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://apemangr.github.io/posts/goisforlovers/</guid>
-      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
-This document is a brief primer on using Go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://apemangr.github.io/posts/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://apemangr.github.io/posts/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo#Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs#Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:</description>
+      <guid>https://apemangr.github.io/posts/30-07-2023/</guid>
+      <description>Hi#%%{init: {&#39;theme&#39;:&#39;dark&#39;}}%%graph TDA[Christmas] --&gt;|Get money| B(Go shopping)B --&gt; C{Let me think}B --&gt; G[/Another/]C ==&gt;|One| D[Laptop]C --&gt;|Two| E[iPhone]C --&gt;|Three| F[fa:fa-car Car]subgraph sectionCDEFGend</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://apemangr.github.io/docs/aoeuu/section/first-page/</link>
+      <link>https://apemangr.github.io/docs/example/Colaappse/3rd-level/4th-level/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://apemangr.github.io/docs/aoeuu/section/first-page/</guid>
-      <description>First page#Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://apemangr.github.io/docs/aoeuu/section/second-page/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://apemangr.github.io/docs/aoeuu/section/second-page/</guid>
-      <description>Second Page#Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://apemangr.github.io/docs/example/collapsed/3rd-level/4th-level/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://apemangr.github.io/docs/example/collapsed/3rd-level/4th-level/</guid>
+      <guid>https://apemangr.github.io/docs/example/Colaappse/3rd-level/4th-level/</guid>
       <description>4th Level of Menu#Caesorum illa tu sentit micat vestes papyriferi#Inde aderam facti; Theseus vis de tauri illa peream. Oculos uberaque non regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo; gestanda nitidi, vero? Dum ne pectoraque testantur.
 Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii. Cupiens auctoribus pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae iusto!</description>
     </item>
